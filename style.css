@@ -1,0 +1,324 @@
+.action{
+	height: 10em;
+	background:url("Images/actionBG.png") 0 0 repeat #005073;
+	background:url("Images/actionBG.png") 0 0 repeat #005073;
+	color:#ffffff;
+}
+.action1{
+    height: 10em;
+    /*background:url("Images/blur.jpg") 0 0 repeat #005073;
+    background:url("Images/blur.jpg") 0 0 repeat #005073;
+    color:#ffffff;*/
+}
+.bod{
+  background:url("Images/lu.jpg") 0 0 repeat #005073;
+    background:url("Images/lu.jpg") 0 0 repeat #005073;
+    color:#ffffff;
+}
+.contain {
+  position: relative;
+  height: 100px;
+  text-align: center;
+}
+#block {
+  background: #CCC;
+  filter: alpha(opacity=60);
+  /* IE */
+  -moz-opacity: 0.9;
+  /* Mozilla */
+  opacity: 0.9;
+  /* CSS3 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 100%;
+  margin-top: 20px;
+}
+#text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+/*
+.contain {
+    width: 200px;
+  height: 200px;
+  background-size: 200px 200px;
+  background-repeat:no-repeat;
+  background-color: linear-gradient(to right, black 0%,white 100%), white;
+  opacity: 0.1;
+  background-blend-mode: color-dodge;
+}*/
+#menu{
+    /*font-weight: bold;*/
+    padding-left: 8px;
+    margin-right: 25px; 
+    color: #ffffff;
+    font-size: 20px;
+}
+ #menu1{
+    padding-left: 2px;
+    margin-right: 115px; 
+    color: #990000;
+    font-size: 20px;
+}
+#nav{
+	text-align: right;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    	display: none;
+    	position: absolute;
+    	background-color: #f9f9f9;
+   	 	min-width: 160px;
+    	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    	padding: 12px 16px;
+    	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+   	display: block;
+     border-radius: 5px;
+}
+#tab{
+	text-align: left;
+    color: black;
+}
+th,td {
+    	vertical-align: center;
+    	white-space: nowrap;
+    overflow: hidden;
+}
+.dropdown-content td{
+    padding-right: 35px;
+    font-size: 15px;
+    padding-left:20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.dropdown-content table td + td { 
+    border-left:2px solid red; 
+ }
+
+ .dropdown-content td:hover {
+    color: blue;
+    background-color: #f1f1f1;
+  }
+.drop{
+    text-decoration: none;
+ }
+.sliding-middle-out {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease; 
+}/*
+#newstitle> #newsdiv:hover{
+
+}*/
+
+.dropdown:hover >.sliding-middle-out:after {
+    width: 100%;
+    background: #FD5F00;
+}
+.ss-icon{color:#fff}
+.ss-icon{display:block;font-style:normal;font-weight:400}
+.ss-icon{line-height:52px;font-size:100px;padding-top:8px}
+@media only screen and (max-width: 760px)
+{.ss-icon
+    {
+        font-size:100px;padding-top:12px
+    }
+}
+textarea:focus, input:focus {
+    font-size: 100px;
+}
+
+input, select, textarea{
+    text-decoration: none;
+    background-color:#ff69b4;/*#faaab2; #FD5F00; #cccc00(204,204,0)* #ff4040(255, 64, 64)*/
+    font-size: 100px;
+}
+input:focus {
+    outline:none;
+    font-size: 100px;
+}
+.wrise{
+    padding: 40px;padding-top: 200px;
+    color: #ffffff;
+    /*background-color:#ff69b4;/*(255, 105, 180)-1 #FD5F00(253,95,0)-3 
+    #cccc00(204,204,0)-4 #ff4040(255, 64, 64)-2*/
+    height: 450px;
+    border-bottom: 2px solid;
+}
+.end{
+    padding-top: 24px;
+    padding-bottom: 48px;
+    background-color: #DCDCDC;
+    margin-bottom: 0px;
+}
+.lay{
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 500px;
+    font-family: Roboto Slab;
+    font-size: 16px;
+}
+table td + td { 
+    border-left:2px solid #808080; 
+ }
+
+#male {
+    background-color: red;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.hide {
+    visibility: hidden;
+    -webkit-animation: fadeOut 1s;
+    animation: fadeOut 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+@-webkit-keyframes fadeIn {
+    from {opacity: 1;} 
+    to {opacity: 0;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 1;}
+    to {opacity:0 ;}
+}
+#lk{
+    text-decoration: none;
+    color: auto;
+}
+.content{
+  /*padding-top: 30px;
+  padding-bottom: 30px;
+  /*background-blend-mode:*/ 
+  height: 40em;
+  background-color: white;
+border-radius: 20px 0px 0px 20px;/*
+margin-left: 131.5px;*/
+color: black;
+}
+.content1{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  background-color: white;
+  /*background-blend-mode:*/ 
+border-radius: 0px 20px 20px 0px;
+margin-right: 13px;
+color: black;
+}
+.bgs {
+    background-color: white;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    position: absolute;height:100%;width:100%;opacity: 0.6;
+    margin-left: 0px;
+    width: 65%;
+    height: 40em;
+border-radius: 20px 0px 0px 20px;
+    background-repeat: no-repeat;
+    background-size:cover; 
+}
+.backg{
+  background-image:url(Images/storybg.jpg);
+  height: 75em;
+}
+@-webkit-keyframes example {
+    0% {background-image: url(Images/a1.jpg);}
+    25% {background-image: url(Images/a2.jpg);}
+    50% {background-image: url(Images/a3.jpg);}
+    75% {background-image: url(Images/a4.jpg);}
+    100% {background-image: url(Images/a1.jpg);}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0% {background-image: url(Images/a1.jpg);}
+    25% {background-image: url(Images/a2.jpg);}
+    50% {background-image: url(Images/a3.jpg);}
+    75% {background-image: url(Images/a4.jpg);}
+    100% {background-image: url(Images/a1.jpg);}
+}
