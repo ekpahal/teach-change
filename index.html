@@ -1,80 +1,110 @@
-<!DOCTYPE html>
-<html>
-<head>
+ <!DOCTYPE html>
+<!-- saved from url=(0059)http://callmenick.com/_development/resize-header-on-scroll/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- title and meta -->
+<meta name="description" content="">
+<link rel="shortcut icon" href="Images/ekpahal.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TFC</title>
+  <title>Teach for Change</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="makerfont.css">
- <!-- <script type="text/javascript">
-      myform2.mytextfield2.Enabled = false;
-          $(window).blur(function(){
-    $( "form #mytextfield2" ).focus();
-});
-$(window).focus(function(){
-  //your code
-  $( "form #mytextfield2" ).focus();
-});
-  </script> -->
-  <script type="text/javascript">
+  <link rel="stylesheet" type="text/css" href="makerfont.css">    
+<!-- css -->
+<link rel="stylesheet" href="./Header Resize On Scroll with Animations_files/style.css">
+    
+<!-- js --><script src="classie.js.download"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+<script type="text/javascript">
      function myPop() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
       }
-      /*function myPopout() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.show("hide");
-      }*/
    </script>
-</head>
-<body id="png" onclick="document.getElementById("male").blur();">
-<div class="action">
-  <div class="col4">
-    <h1 style="text-align: center;padding-top: 8%;"><a href="../" style="text-decoration: none;color: white;">Ek PAHAL</a> </h1>
-  </div>
-  <div style="padding-top: 5%;padding-right: 4%;" class="col8">
-    <div id="nav" >
+<script id="_carbonads_projs" type="text/javascript" src="http://srv.carbonads.net/ads/C6AILKT.json?segment=placement:callmenickcom&amp;callback=_carbonads_go"></script><script type="text/javascript" src="http://fallbacks.carbonads.com/home/e99a260b94849497ea962f674f0aebd9/?149932588"></script></head>
+
+
+
+<body>
+
+<div id="wrapper">
+
+<header class="action">
+    <div class="clearfix">
+        <h1 id="logo" style="text-align: right;">
+          <div id="logo">
+            <img src="Images/ekpahall.png" height="50px" width="50px"></a>
+          </div>
+            <a href="../" style="text-decoration: none;color: white;margin-left: 10px;"> Ek PAHAL</a>
+        </h1>
+        <nav>
+          
+            <div id="nav" >
         <div class="dropdown"  id="raj">
           <span id="menu" class="sliding-middle-out">About Us</span>
-          <div class="dropdown-content" style="color: black;">
+          <div class="dropdown-content" style="color: black;line-height: 20px;">
               <table id="tab">
-                <tr><td><a id="lk" href="../our-story">Our Story</a></td></tr>
-                <tr><td><a id="lk" href="../vision">Vision,Mission & Motto</a></td></tr>
-                <tr><td><a id="lk" href="../people">People</a></td></tr>
-                <tr><td><a id="lk" href="../mentors">Mentors</a></td></tr>
+                <tr><td><a style="line-height: 20px;" id="lk" href="../our-story">Our Story</a></td></tr>
+                <tr><td><a style="line-height: 20px;" id="lk" href="../vision">Vision,Mission & Motto</a></td></tr>
+                <tr><td><a style="line-height: 20px;" id="lk" href="../people">People</a></td></tr>
+                <tr><td><a style="line-height: 20px;" id="lk" href="../mentors">Mentors</a></td></tr>
               </table>
             </div>
         </div>
+        <span id="mm"> </span>
         <div class="dropdown"  id="raj">
           <span id="menu" class="sliding-middle-out">Programs</span>
           <div class="dropdown-content">
               <table id="tab">
-                <tr><td><a id="lk" href="../Community-school">Community School</a></td><td><a id="lk" href="../gateway-fellowship">Gateway Fellowship</a></td></tr>
-                <tr><td><a id="lk" href="../anwesha/">Anwesha</a></td><td><a id="lk" href="../teach-change">Teach for change (TFC)</a></td></tr>
-                <tr><td><a id="lk" href="../swamanthan">Swamanthan</a></td><td><a id="lk" href="../mentorship">1 to 1 Mentorship</a></td></tr>
-                <tr><td><a id="lk" href="../aslp">ASLP</a></td><th></th></tr>
+                <tr><td><a style="line-height: 20px;" id="lk" href="../Community-school">Community School</a></td><td><a style="line-height: 20px;"  id="lk" href="../gateway-fellowship">Gateway Fellowship</a></td></tr>
+                <tr><td><a id="lk" style="line-height: 20px;" href="../anwesha/">Anwesha</a></td><td><a id="lk" style="line-height: 20px;" href="../teach-change">Teach for change (TFC)</a></td></tr>
+                <tr><td><a id="lk" style="line-height: 20px;" href="../swamanthan">Swamanthan</a></td><td><a id="lk" style="line-height: 20px;" href="../mentorship">1 to 1 Mentorship</a></td></tr>
+                <tr><td><a id="lk" style="line-height: 20px;" href="../aslp">ASLP</a></td><td></td></tr>
               </table>
             </div>
         </div>
-          <span id="menu" class="sliding-middle-out"><a href="../impact" style="color: white;text-decoration: none;">Impact</a></span>
+        <div class="dropdown">
+          <a href="../impact" id="menu" class="sliding-middle-out" style="color: white;text-decoration: none;">Impact</a>
+        </div>
         <div class="dropdown"  id="raj">
           <span id="menu" class="sliding-middle-out">Get Involved</span>
           <div class="dropdown-content">
               <table id="tab">
-                <tr><td><a id="lk" href="https://docs.google.com/forms/d/e/1FAIpQLSeqXmylWXPt0xyHzFpbLFYLcUJP1USnYx9mhT0PGjKcImU0UQ/viewform">Donate Time</a></td></tr>
-                <tr><td><a id="lk" href="../donate-resource">Donate Resources</a></td></tr>
+                <tr><td><a id="lk" style="line-height: 20px;" href="https://docs.google.com/forms/d/e/1FAIpQLSeqXmylWXPt0xyHzFpbLFYLcUJP1USnYx9mhT0PGjKcImU0UQ/viewform">Donate Time</a></td></tr>
+                <tr><td><a id="lk" style="line-height: 20px;" href="../donate-resource">Donate Resources</a></td></tr>
               </table>
             </div>
         </div>
           <span id="menu" class="sliding-middle-out"><a href="../contact-us" style="color: white;text-decoration: none;">Contact Us</a></span>
         
-  </div>  </div>    
-</div><div>
+  </div>
+        </nav>
+    </div>
+</header><!-- /header -->
 
-<div class="backg" style="margin-top: 5px;padding-top: 7px;position: relative"> <div style="position: relative;">
-<h1 style="color: #9090ff;text-align: center;font-family:Dancing Script;font-weight: 600;font-size: 38px;"> <span style="color: white">Teach for </span><span style="color: #dddddd;">change</span>  (TFC)</h1>
-  <div style="position: relative;padding-top: 9px;font-family: cursive;font-weight: 400;padding-left: 10%;color: white;font-size: 20px;padding-right: 10%;"><br>
+<div id="main">
+    <div id="">
+        <section style="padding-bottom: 0px;">
+        <div class="backg" style="margin-top: 10px;padding-top: 7px;position: relative"> <div style="position: relative;">
+<h1 style="color: #000090;text-align: center;font-family:Dancing Script;font-weight: 600;font-size: 38px;"> <span style="color: white">Teach for </span><span style="color: #dddddd;">change</span>  (TFC)</h1>
+  <div style="position: relative;padding-top: 9px;font-family: Droid Sans;font-weight: 400;padding-left: 10%;color: white;font-size: 20px;padding-right: 10%;"><br>
   <p>
     <h3 style="font-family: Script MT Bold;">Fellowship</h3>
     The Teach For Change Fellowship program is a 2 year part-time paid commitment in which we place the young under-graduates as part time teachers in our ASLP & Community School programs.</p>
@@ -100,15 +130,15 @@ $(window).focus(function(){
     <h3 style="font-family: Script MT Bold;">​​Registration Fees</h3>
     The whole selection process is completely free-of-cost.​
   </p>               
-
+  <br><br>
 
 
   </div>
 </div>
 </div>
-
-
-<div class="end" style="position: relative;">
+        </section>
+        <section style="padding-bottom: 0px;padding-top: 0px;">
+            <div class="end" style="position: relative;">
   <div class="col-sm-5" style="position: relative;padding-left: 145px;">
   <table>
     <tr><td><span class="lay"><a id="lk" href="f:" target="_blank" style="color: black;">FAQ</a></span></td>
@@ -131,6 +161,15 @@ $(window).focus(function(){
   </span>
   </div>
 </div>
-</div>
-</body>
-</html>
+        </section>
+    </div>
+</div><!-- #main -->
+
+
+
+
+
+</div><!-- /#wrapper -->
+
+
+</body></html>
